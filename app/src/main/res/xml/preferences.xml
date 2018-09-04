@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory
+        android:summary="Change the theme of the calculator"
+        android:title="@string/theme_title" >
+        
+        <ListPreference
+            android:defaultValue="a"
+            android:entries="@array/themeOptions"
+            android:entryValues="@array/themeValues"
+            android:key="theme"
+            android:summary="You can choose a theme color for the app "
+            android:title="@string/theme_title" />
+        
+    </PreferenceCategory>
+</PreferenceScreen>

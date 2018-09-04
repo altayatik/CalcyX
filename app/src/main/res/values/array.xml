@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+   <string-array name="themeOptions">
+     <item>X Theme (Main)</item>
+     <item>Night Theme(Eye Protect)</item>
+   </string-array>
+
+
+ 
+   <string-array name="themeValues">
+     <item>a</item>
+     <item>b</item>
+
+
+   </string-array>
+
+   
+ </resources>

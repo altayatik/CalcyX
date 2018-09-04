@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "276320577043",
+    "firebase_url": "https://calcy-x.firebaseio.com",
+    "project_id": "calcy-x",
+    "storage_bucket": "calcy-x.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276320577043:android:d72a24ad6f73037d",
+        "android_client_info": {
+          "package_name": "calcyapps.calcyx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276320577043-hncgs6gu9qnmeg5rggajnb5ifrhpaupo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "calcyapps.calcyx",
+            "certificate_hash": "9f1882f1b9b6401e055b8bc3eff28c10b6efb321"
+          }
+        },
+        {
+          "client_id": "276320577043-kdkkrmf0jj7h69qlbsp4lvhk8ggaie1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzoYbXFCfufvPWDMTZjDgwJtKLN1fpBCk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276320577043-kdkkrmf0jj7h69qlbsp4lvhk8ggaie1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

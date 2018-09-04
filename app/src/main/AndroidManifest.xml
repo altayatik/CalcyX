@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="calcyapps.calcyx">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/calxlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".App">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Main"> </activity>
+
+        <activity
+            android:name="calcyapps.calcyx.Preferences"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="calcyapps.calcyx.Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calcyapps.calcyx.Main" />
+        </activity>
+        <activity
+            android:name="calcyapps.calcyx.settingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="calcyapps.calcyx.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="calcyapps.calcyx.Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calcyapps.calcyx.Main" />
+        </activity>
+
+        <activity
+            android:name="calcyapps.calcyx.DarkTheme"
+            android:label="About Dark Theme"
+            android:parentActivityName="calcyapps.calcyx.Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calcyapps.calcyx.Main" />
+        </activity>
+
+
+
+
+
+
+
+
+    </application>
+
+
+</manifest>

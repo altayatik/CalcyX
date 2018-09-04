@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="normal_button_normal">#F2f2ec</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gold">#daa520</color>
+    <color name="normal_button_pressed">#ECECEC</color>
+    
+    <color name="window_bg">#FFF2F2EC</color>
+    <color name="window_bg_dark">#FF2F2F2F</color>
+    
+    <color name="statusbar">#263238</color>
+    <color name="statusbarblue">#000</color>
+    <color name="statusbarorange">#263238</color>
+    <color name="statusbarpurple">#263238</color>
+    <color name="statusbarred">#263238</color>
+    <color name="statusbargold">#263238</color>
+
+    
+    <color name="navigationbar">#263238</color>
+    <color name="navigationbarblue">#000</color>
+    <color name="navigationbarorange">#263238</color>
+    <color name="navigationbarpurple">#263238</color>
+    <color name="navigationbarred">#263238</color>
+    <color name="navigationbargold">#263238</color>
+    
+    <color name="adv_button_normal">#10B286</color>
+    <color name="adv_button_pressed">#F2F2EC</color>
+    
+    <color name="reset_button_normal">#35444f</color>
+    
+    <color name="transparent">#00000000</color>
+    
+    <color name="equal_button_bg_norm">#10B286</color>
+    
+    <color name="ics_blue">#33b5e5</color>
+    <color name="orange">#FFBB33</color>
+    <color name="purple">#AA66CC</color>
+    <color name="red">#ff4444</color>
+    <color name="red_dark">#CC0000</color>
+    
+    <color name="link_bg_pressed">#aaEBF3FC</color>
+    <color name="gray">#ffffff</color>
+    <color name="calx">#263238</color>
+
+    <color name="primary">#f1f1f1</color>
+    <color name="primary_dark">#f57c00</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="accent">#FF5252</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#ffffff</color>
+    <color name="buton">#000000</color>
+    <color name="hafifgray">#616161</color>
+    <color name="nighttheme">#e6e58c</color>
+
+</resources>

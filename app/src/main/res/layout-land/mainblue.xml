@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText1"
+                style="@style/ResultTheme"
+                android:layout_width="477dp"
+                android:layout_height="fill_parent"
+                android:background="@color/black"
+                android:clickable="false"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="numberDecimal|numberSigned"
+                android:longClickable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:onClick="onClickListener_input"
+                android:padding="5dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textColor="@color/nighttheme"
+                android:textSize="30sp">
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/button_del"
+                style="@style/buttons"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:background="@color/black"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:onClick="onClickListener_del"
+                android:padding="10dp"
+                android:text="@string/delete_numbers"
+                android:textColor="@color/nighttheme"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                style="@style/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:onClick="onClickListenerReset"
+                android:padding="10dp"
+                android:text="C"
+                android:textColor="@color/nighttheme"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="562dp"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8517935809979833/2460026207"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#10b286"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_openpar"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_openpar"
+                    android:padding="0dp"
+                    android:text="("
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_closepar"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_closepar"
+                    android:padding="0dp"
+                    android:text=")"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_mod"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_mod"
+                    android:padding="0dp"
+                    android:text="%"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#10B286"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_sin"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_sin"
+                    android:padding="0dp"
+                    android:text="sin"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_cos"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_cos"
+                    android:padding="0dp"
+                    android:text="cos"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_tan"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_tan"
+                    android:padding="0dp"
+                    android:text="tan"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#10B286"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_asin"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_asin"
+                    android:padding="0dp"
+                    android:text="asin"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_acos"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_acos"
+                    android:padding="0dp"
+                    android:text="acos"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_atan"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_atan"
+                    android:padding="0dp"
+                    android:text="atan"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#10B286"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_exp"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_exp"
+                    android:padding="0dp"
+                    android:text="@string/exp"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_root"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_root"
+                    android:padding="0dp"
+                    android:text="@string/square_root_symbol"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_pi"
+                    style="@style/buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:onClick="onClickListener_pi"
+                    android:padding="0dp"
+                    android:text="@string/pi"
+                    android:textColor="@color/nighttheme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    style="@style/norm_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+
+                        style="@style/norm_buttons"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/button7"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+
+                            android:background="@color/black"
+                            android:onClick="onClickListener7"
+                            android:text="7"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListener8"
+                            android:text="8"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/button9"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.00"
+                            android:background="@color/black"
+                            android:onClick="onClickListener9"
+                            android:text="9"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/buttonPlus"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListenerPlus"
+                            android:text="+"
+                            android:textColor="@color/nighttheme" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        style="@style/norm_buttons"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/button4"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListener4"
+                            android:text="4"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListener5"
+                            android:text="5"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.00"
+                            android:background="@color/black"
+                            android:onClick="onClickListener6"
+                            android:text="6"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/buttonMinus"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.00"
+                            android:background="@color/black"
+                            android:onClick="onClickListenerMinus"
+                            android:text="－"
+                            android:textColor="@color/nighttheme" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        style="@style/norm_buttons"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/button1"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListener1"
+                            android:text="1"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListener2"
+                            android:text="2"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListener3"
+                            android:text="3"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/buttonMultiply"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListenerMultiply"
+                            android:text="ⅹ"
+                            android:textColor="@color/nighttheme" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        style="@style/norm_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/buttonPoint"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListenerPoint"
+                            android:text="."
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/button0"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListener0"
+                            android:text="0"
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/buttonEqual"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListenerEqual"
+                            android:text="="
+                            android:textColor="@color/nighttheme" />
+
+                        <Button
+                            android:id="@+id/buttonDivide"
+                            style="@style/buttons"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:onClick="onClickListenerDivide"
+                            android:text="÷"
+                            android:textColor="@color/nighttheme" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
